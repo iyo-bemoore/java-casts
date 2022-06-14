@@ -1,5 +1,6 @@
 public class MathOperations {
     public static void main(String[] args) {
+        int counter = 0;
         int bagOfSweets1 = 5;
         int bagOfSweets2 = 10;
         System.out.println(bagOfSweets2 / bagOfSweets1);
@@ -29,7 +30,13 @@ public class MathOperations {
                 "Originally, Fred had " + (bagOfSweets2 / bagOfSweets1) + " times more sweets than George");
         System.out.println("Andromeda has " + (starsInAndromeda / starsInTheMilkyWay) + " times more stars");
         System.out.println("Snape caught the error. Furious, he divided Ron's score to: " + (testScore / bonusMarks));
-    }
+        System.out.println("10 is an even number, since dividing 10 by 2 has a remainder of: " +(10 % 2) );
+        System.out.println("5 is an odd number, since dividing 5 by 2 has a remainder of: "+(5 % 2));
+        
+        // increase counter 
+            
+        ++counter;
+        counter--;
+        System.out.println("Counter is : " +  counter);
 }
-
-// Snape caught the error. Furious, he divided Ron's score to: <result>
+}
