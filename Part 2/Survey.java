@@ -1,8 +1,9 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Survey {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in).useLocale(Locale.ENGLISH);
         System.out.println("Welcome to food & beverage survey");
         System.out.println("What is your name?");
         String name = scan.nextLine();
@@ -31,6 +32,7 @@ public class Survey {
         System.out.println("Participant Coffee spendings: "+coffeeSpendings+"$");
         System.out.println("Participant Coffee Fast food spendings: "+fastFoodSpendings+"$");
         System.out.println("--------- End Survey ---------- ");    
+        scan.close();
 
     }
     
